@@ -1,2 +1,4 @@
-# RestWebService
-Cliente y Servicio REST para servicios Rut y Nombre Propio
+# WevServices
+Clientes y servicios REST y SOAP.
+
+
