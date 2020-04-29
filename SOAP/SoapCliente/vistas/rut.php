@@ -12,7 +12,8 @@
 		if($_POST){
 			$peticion = new CurlRequest();
 			$res_json = json_decode($peticion -> rutSendPost(),true);
-			 var_dump($res_json);
+			 //var_dump($res_json);
+			 print $res_json;
 		}
 		?>
 		</form>

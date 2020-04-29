@@ -4,11 +4,11 @@
 <label for="nombre">Nombre:</label><br>
 <input type="text" name="nombre" placeholder="Escriba su nombre"><br>
 
-<label for="apellido_p">Apellido paterno:</label><br>
-<input type="text" name="apellido_p" placeholder="Apellido paterno"><br>
+<label for="apellidopa">Apellido paterno:</label><br>
+<input type="text" name="apellidopa" placeholder="Apellido paterno"><br>
 
-<label for="apellido_m">Apellido materno</label><br>
-<input type="text" name="apellido_m" placeholder="Apellido materno"><br>
+<label for="apellidoma">Apellido materno</label><br>
+<input type="text" name="apellidoma" placeholder="Apellido materno"><br>
 
 <label for="sexo">Indique su genero (M)hombre, (F)mujer</label><br>
 <select name="sexo">
@@ -21,7 +21,8 @@
 if($_POST){
 			$peticion = new CurlRequest();
 			$res_json = json_decode($peticion -> nombreSendPost(), true);
-			var_dump($res_json);
+			//var_dump($res_json);
+			print $res_json;
 		}
 ?>
 </form>
