@@ -4,6 +4,10 @@
 	<title>Inicio</title>
 </head>
 <body>
-	<h1>Página de inicio :D</h1>
+	<div class="container px-5 py-5">
+
+	<h1>Inicio</h1>
+	<p>pagina de inicio</p>
+</div>
 </body>
 </html>

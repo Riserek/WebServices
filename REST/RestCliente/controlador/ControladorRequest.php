@@ -23,7 +23,7 @@
 		    //enviamos el array data
 		    curl_setopt($ch, CURLOPT_POSTFIELDS,http_build_query($data));
 		    //obtenemos la respuesta
-		    $_response = curl_exec($ch);
+		    $response = curl_exec($ch);
 		    // Se cierra el recurso CURL y se liberan los recursos del sistema
 		    curl_close($ch);
 		    if(!$response) {
