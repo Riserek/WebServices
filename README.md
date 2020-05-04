@@ -9,6 +9,7 @@ Proyecto desarrollado para la asignatura Redes y comunicación de datos
 Miembros del equipo de trabajo:
 
 
+
 Roberto Albornoz - ID: Riserek
 
 Alex Bidart - ID: alexbidartsomta
