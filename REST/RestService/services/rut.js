@@ -39,13 +39,13 @@ var validar_rut = function(req,res){
     }
     if(rut[rut.length - 1] == dv){
         res.json({
-            message: 'Felicitaciones!, Rut correcto',
+            message: 'V',
             rut: rut
             
         })
     }else{
         res.json({
-            message: 'El rut es incorrecto',
+            message: 'I',
             rut: rut
         })
     }

@@ -1,7 +1,3 @@
-
-
-
-
 var nombreSexo = function(req,res){
     var {nombre,apellido_p,apellido_m,sexo} = req.body;
     sexoLower = "";
@@ -45,8 +41,8 @@ var nombreSexo = function(req,res){
         case "f":
             res.json({
                 message: "Sra. ",
-                Nombre: nombreLowerUS[0],
-                apllido_p: apellidoPLowerU,
+                Nombre: finalNombre,
+                apellido_p: apellidoPLowerU,
                 apellido_m: apellidoMLowerU
             });
             break;
