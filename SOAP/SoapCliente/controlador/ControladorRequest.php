@@ -6,8 +6,9 @@
         	$servicio='http://localhost:1212/WS/Servicioweb?wsdl'; 
         	$parametros=array('arg0'=>$rut);
         	$client=new SoapClient($servicio);
-        	$result=$client->validarrut($parametros);
-    		print "<br>".$rut." es un ".$result->return;
+			$result=$client->validarrut($parametros);
+    		print "<div class=\"form-group px-5 shadow p-3 mb-5 bg-white rounded\">
+			<p>".$rut." es un ".$result->return."</p> </div>";
 		}
 		
 		public function nombreSendPost(){
@@ -20,7 +21,9 @@
             $parametros2=array('arg0'=>$nombres,'arg1'=>$apellidopa,'arg2'=>$apellidoma,'arg3'=>$sexo);
             $client2=new SoapClient($servicio2);
             $result2=$client2->nombrepropio($parametros2);
-            print "<br>"."Hola ".$result2->return;
+			print "<div class=\"form-group px-5 shadow p-3 mb-5 bg-white rounded \">
+			<p class=\"text-center\"> Hola ".$result2->return."</p> </div>"; 
+	
 	}
 }
 ?>  
