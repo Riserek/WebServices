@@ -8,7 +8,7 @@
 		?>
 	<div class="alert alert-dark" role="alert">
 		<?php 
-		echo "Hola ".$res_json["message"].", ".$res_json["Nombre"]." ".$res_json["apellido_p"]." ".$res_json["apellido_m"],", gracias por usar el servicio :)" ;
+		echo "Hola, ".$res_json["message"]." ".$res_json["Nombre"]." ".$res_json["apellido_p"]." ".$res_json["apellido_m"],", gracias por usar el servicio :)" ;
 		 ?>
 		<?php endif ?>
 	</div>
