@@ -1,17 +1,12 @@
 <div class="container px-5 py-5">
 	<h1>Nombre propio Service</h1>
 	<p>Ingrese su nombre completo y genero</p>
-	<?php if($_POST): ?>
-		<?php 
-			$peticion = new CurlRequest();
-			$res_json = json_decode($peticion -> nombreSendPost(), true);
-		?>
-	<div class="alert alert-dark" role="alert">
-		<?php 
-		echo "Hola, ".$res_json["message"]." ".$res_json["Nombre"]." ".$res_json["apellido_p"]." ".$res_json["apellido_m"],", gracias por usar el servicio :)" ;
-		 ?>
-		<?php endif ?>
-	</div>
+	<?php 
+		if($_POST){
+			$respuesta = new ControladorRequest();
+			$respuesta -> ctrNombre();
+		}
+	 ?>			
 </div>
 <form method='post'>
 	<div class="container mx-auto">
