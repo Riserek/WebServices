@@ -1,23 +1,13 @@
 <div class="container px-5 py-5">
 	<h1>Rut Service</h1>
 	<p>ingrese su rut sin puntos y con -<br> el servicio comprobara si su dígito verificador es valido o no</p>
-	<?php if($_POST): ?>
-			<?php 
-				$peticion = new CurlRequest();
-				$res_json = json_decode($peticion -> rutSendPost(),true); 
-			?>
-			<?php if($res_json["message"] == "V"): ?>
-				<div class="alert alert-success" role="alert">
-			  	<?php echo "El rut ".$res_json["rut"]." ingresado es valido :)"; ?>
-				</div>
-			<?php else: ?>
-				<div class="alert alert-danger" role="alert">
-				<?php echo "El rut ".$res_json["rut"]." ingresado es invalido :("; ?>
-				</div>
-			<?php endif ?>
-	<?php endif ?>	
+	<?php 
+		if($_POST){
+			$respuesta = new ControladorRequest();
+			$respuesta -> ctrRut();
+		}		
+	?>		
 </div>
-
 <form method='post'>
 	<div class="container mx-auto">
 		<div class="form-group px-5 shadow p-3 mb-5 bg-white rounded">

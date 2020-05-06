@@ -2,7 +2,7 @@
 	<div class="p-3 bg-dark text-white d-flex justify-content-center"><h2>WEbService REST</h1></div>
 
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
 	
 	<div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
 			<div class="navbar-nav">
