@@ -38,7 +38,6 @@
 	if($_POST){
 			$peticion = new CurlRequest();
 			$res_json = json_decode($peticion -> nombreSendPost(), true);
-			//var_dump($res_json);
 			print $res_json;
 		}
 	?>

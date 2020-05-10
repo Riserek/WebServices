@@ -1,5 +1,5 @@
 <!DOCTYPE html>
- <html>
+ <html  lang="es">
  <head>
  	<title>Cliente SOAP</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -17,9 +17,9 @@
 	<div>
 		<?php 
 			if(isset($_GET['pagina'])){
-				if( $_GET['pagina'] == "rut" ||
-					$_GET['pagina'] == "nombre"){
-					include "vistas/".$_GET['pagina'].".php";
+				$_pagina = $_GET['pagina'];
+				if( $_pagina  == "rut" || $_pagina  == "nombre"){
+					include "vistas/".$_pagina.".php";
 				}else{
 					include "vistas/inicio.php";
 				}
