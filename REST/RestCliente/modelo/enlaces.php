@@ -2,7 +2,7 @@
 
 class EnlacesPagina{
 
-	public function enlacesPaginasModelo($navegacion){
+	Static public function enlacesPaginasModelo($navegacion){
 		if( $navegacion == "inicio" ||
 			$navegacion == "rut" ||
 		    $navegacion == "nombre"){

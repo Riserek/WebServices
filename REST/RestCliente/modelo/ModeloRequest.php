@@ -1,7 +1,7 @@
 <?php 
 
 	class CurlRequest{
-		public function nombreSendPost(){
+		Static public function nombreSendPost(){
 			$data = array(
 						"nombre" => $_POST['nombre'],
 						"apellido_p" => $_POST['apellido_p'],
@@ -27,7 +27,7 @@
 		    }
 		}
 		
-	public function rutSendPost(){
+	Static public function rutSendPost(){
             $data = array("rut" => $_POST['rut']);
             $ch = curl_init("http://localhost:4000/rut");
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
